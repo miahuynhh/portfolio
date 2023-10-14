@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!--
+  Name: Mia Huynh
+  Date: August 8, 2023
+  Section: CSE 154 AC - TA Allison Ho
+
+  This is the index.html page for my website about Powerpuff Girls.
+  It generates random emojis that each Powerpuff Girl likes, an activity each
+  girl likes, a meaning behind each girl's name, and the girls' favorite NewJeans songs.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,800&family=Lora&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <title>The Powerpuff Girls</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <!-- image retrieved from https://www.pngplay.com/image/538667 -->
+        <img id="logo" src="img/logo.png" alt="Powerpuff Girls Logo">
+        <p>Click on our names to see our favorite emojis!</p>
+      </section>
+      <section id="powerpuff-girls">
+        <!-- image from https://www.stickpng.com/img/cartoons/powerpuff-girls/powerpuff-girls -->
+        <img src="img/powerpuff-girls.png" alt="Powerpuff Girls' Bubbles">
+      </section>
+      <section>
+        <!-- all the buttons -->
+        <button id="bubbles-emoji-btn">Bubbles</button>
+        <button id="blossom-emoji-btn">Blossom</button>
+        <button id="buttercup-emoji-btn">Buttercup</button>
+      </section>
+      <section id="emojis">
+        <section id="bubbles-emojis"></section>
+        <section id="blossom-emojis"></section>
+        <section id="buttercup-emojis"></section>
+      </section>
+      <section id="meanings">
+        <section>
+          <!-- image retrieved from https://www.pngall.com/powerpuff-girls-png/download/100212 -->
+          <img src="img/bubbles.png" alt="Powerpuff Girls Bubbles">
+          <article class="bubbles">
+            <p>Do you know what Bubbles mean?</p>
+            <button id="bubbles-meaning-btn">Bubbles can mean...</button>
+          </article>
+        </section>
+        <section>
+          <article class="blossom">
+            <p>Blossom is the best name!</p>
+            <button id="blossom-meaning-btn">Blossom can mean...</button>
+          </article>
+          <!-- image retrieved from https://twitter.com/PowerpuffB23/status/1622704817620586502 -->
+          <img src="img/blossom.png" alt="Powerpuff Girls Blossom">
+        </section>
+        <section>
+          <!-- image retrieved from https://www.pngmart.com/image/128121 -->
+          <img src="img/buttercup.png" alt="Powerpuff Girls Buttercup">
+          <article class="buttercup">
+            <p>You wish your name was Buttercup.</p>
+            <button id="buttercup-meaning-btn">Buttercup can mean...</button>
+          </article>
+        </section>
+      </section>
+      <section id="activities">
+        <p>Let's do something fun together!</p>
+        <section id="radios">
+          <section class="bubbles">
+            <p>Bubbles likes to</p>
+            <label><input value="relaxation" type="radio" name="activity"> Relax</label>
+            <label><input value="social" type="radio" name="activity"> Socialize</label>
+            <label><input value="cooking" type="radio" name="activity"> Cook</label>
+          </section>
+          <section class="blossom">
+            <p>Blossom likes to</p>
+            <label><input value="education" type="radio" name="activity"> Learn</label>
+            <label><input value="charity" type="radio" name="activity"> Help people</label>
+            <label><input value="music" type="radio" name="activity"> Jam</label>
+          </section>
+          <section class="buttercup">
+            <p>Buttercup likes to</p>
+            <label><input value="diy" type="radio" name="activity"> DIY</label>
+            <label><input value="recreational" type="radio" name="activity"> Play</label>
+            <label><input value="busywork" type="radio" name="activity"> Do busywork</label>
+          </section>
+        </section>
+        <section id="generated-activity"></section>
+      </section>
+      <section id="songs">
+        <p>
+          We listen to a lot of
+          <a
+            href="https://open.spotify.com/artist/6HvZYsbFfjnjFrWF950C9d" target="_blank"> NewJeans
+          </a>
+          !
+        </p>
+        <section id="all-songs">
+          <p>You can see all the songs we love listening to by clicking this button!</p>
+          <button id="songs-btn">Our Top NewJeans Songs</button>
+          <section id="all-songs-container"></section>
+        </section>
+        <section id="personal-picks">
+          <section>
+            <p>You can also see each of our personal picks!</p>
+            <label class="bubbles">
+              <input value="bubbles" type="radio" name="powerpuff"> Bubbles
+            </label>
+            <label class="blossom">
+              <input value="blossom" type="radio" name="powerpuff"> Blossom
+            </label>
+            <label class="buttercup">
+              <input value="buttercup" type="radio" name="powerpuff"> Buttercup
+            </label>
+          </section>
+          <section id="personal-picks-container"></section>
+        </section>
+      </section>
+      <section id="error" class="hidden">
+        <img src="img/error-msg.png" alt="sad Powerpuff Girls">
+      </section>
+    </main>
+    <footer>
+      <p>
+        Information from this page was retrieved from
+        <a href="https://www.boredapi.com/documentation" target="_blank">Bored API</a>
+        as well as
+        <a href="https://dictionaryapi.dev/" target="_blank">Free Dictionary API</a>
+      </p>
+    </footer>
+  </body>
+</html>
