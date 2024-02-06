@@ -12,5 +12,5 @@ The source files include functions to recursively generate a Fibonacci number wi
 ## Languages:
 TypeScript, JSX, HTML, CSS
 
-## Tools: 
-Visual Studio Code
+## Tools & Frameworks
+Visual Studio Code, React
