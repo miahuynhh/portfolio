@@ -8,6 +8,7 @@ The web app can be run by running the command npm run start, then pointing the b
 
 The source files include functions to recursively generate a Fibonacci number with speed, defensive checks on user input and tests for the application, as well as front-end components.
 
+Completed for Homework 1 for Autumn 2023 UW CSE 331 - Software Design & Implementation.
 
 ## Languages:
 TypeScript, JSX, HTML, CSS
