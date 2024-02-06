@@ -1,0 +1,21 @@
+body {
+  background-color: #bdd4bc;
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  font-size: 20px;
+  color: #004600;
+}
+
+.restart {
+  border-width: 4px;
+  width: 150px;
+  height: 30px;
+  border-color: white;
+  border-radius: 10%;
+  border-style: dashed;
+  margin: 30px;
+}
+
+a {
+  color: white;
+}
